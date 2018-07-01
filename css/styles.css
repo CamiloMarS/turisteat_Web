@@ -1,0 +1,162 @@
+/* Variables para el formulario */
+:root {
+    --fuente-titulo-form: 'El Messiri', sans-serif;
+    --fuente-subtitulos-form: 'Handlee', cursive;
+    --sombra-para-titulos: 2px 1px 1px #000;
+    --sombra-para-texto: 1px 1px 1px rgba(0,0,0,.8);
+}
+/* Eliminar margenes y borders del navegador */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**
+* Seccion para la barra de navegación
+**/
+header{
+    background: red;
+    display: flex;
+    width: 100%;
+    height:7vh;
+}
+.turisteat-nav{
+    width: 100%;
+    background:blue;
+}
+.turisteat-nav a:first-child{
+    color:red;
+    
+}
+
+/**
+* Seccion para el formulario dinámico
+*/
+.secciones-principales{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin:3% 0;
+  position: absolute;
+}
+/**
+*
+**/
+.article-form-login{
+    position: relative;
+    background-image:url(https://img.freepik.com/vector-gratis/fondo-de-malla-degradado-abstracto-borrosa_1159-3169.jpg?size=338&ext=jpg);
+    background-size:cover;
+    margin: 0 auto;
+    width:25%;
+    text-align: center;
+}
+/**
+*
+**/
+.form-login > .titulo-form{
+    padding: 3px 0;
+    color:#fff;
+    font-size: 40px; 
+    font-family: var(--fuente-titulo-form);  
+    text-align: center;
+    text-shadow: var(--sombra-para-titulos);
+}
+/**
+*
+**/
+.form-login{
+    background:rgba(95, 173, 224, .5);
+    width:100%;
+    padding:20% 0;
+}
+/**
+*
+**/
+.labels-form{
+    display: block;
+    color: #fff;/*rgba(95, 173, 224, 1);*/
+    font-weight:bolder;
+    font-size:20px;
+    font-family: var(--fuente-subtitulos-form);
+    margin: .5rem auto;
+    text-shadow: var(sombra-para-titulos);
+}
+/**
+*
+**/
+.inputs-style{
+    background: transparent;
+    color:#fff;
+    border:none;
+    border-bottom: 2px solid #fff;
+    font-size:17px;
+    font-family: var(--fuente-subtitulos-form);
+    font-weight: bold;
+    margin:10px auto;
+    padding:.5rem;
+    text-align: left;
+    text-shadow: var(--sombra-para-texto);
+    width:80%;
+}
+/**
+*
+**/
+.inputs-style:focus{
+    outline: 0px;
+}
+/**
+*
+**/
+.content-inputs{
+    width:90%;
+    display: flex;
+    align-items: center;
+    margin:0 auto;
+    padding: 0 1rem;
+}
+/**
+*
+**/
+.icons-form{
+    width:30px;
+}
+/**
+*
+**/
+.btns-form{
+    background: rgba(12, 161, 224, 0.7);
+    border:none;
+    border-radius:30px;
+    color: #fff;
+    cursor: pointer;
+    display:block;
+    font-size:18px;
+    font-family: var(--fuente-titulo-form);   
+    height: 2.3rem;
+    margin: 1rem auto;
+    width: 60%;
+}
+/**
+*
+**/
+.span-recordarme > a{
+    margin-right:5px;
+    font-style: oblique;
+    font-size:16px;
+    color:#fff;
+}
+
+
+/***
+*   Media querys para el formulario
+***/
+@media only screen and (max-width:400px){
+    .secciones-principales{
+        height: 100vh;
+        margin:0 auto;
+    }
+    .article-form-login{
+        width: 100%;
+        height: 100%;
+    }
+}
